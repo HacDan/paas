@@ -16,7 +16,7 @@ func rightPad(s string, p string, c string) []byte {
 	pad, _ := strconv.Atoi(p)
 	var padder string
 
-	if len(c) > 1 {
+	if len(c) >= 1 {
 		padder = c
 	} else {
 		padder = " "
@@ -36,7 +36,7 @@ func leftPad(s string, p string, c string) []byte {
 	pad, _ := strconv.Atoi(p)
 	var padder string
 
-	if len(c) > 1 {
+	if len(c) >= 1 {
 		padder = c
 	} else {
 		padder = " "
